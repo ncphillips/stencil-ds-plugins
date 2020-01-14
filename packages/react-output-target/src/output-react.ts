@@ -49,7 +49,7 @@ import { createReactComponent } from './react-component-lib';\n`;
     ),
   )}';\n`;
 
-  const registerCustomElements = `${APPLY_POLYFILLS}().then(() => ${REGISTER_CUSTOM_ELEMENTS}());`;
+  const registerCustomElements = `${APPLY_POLYFILLS}().then(() => ${REGISTER_CUSTOM_ELEMENTS}(window));`;
 
   const final: string[] = [
     imports,
